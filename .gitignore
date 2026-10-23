@@ -20,3 +20,8 @@ font_verification_report.txt
 CLAUDE.md 
 test_*.py 
 analyze_glyphs.py 
+fonts_sel/
+fonts_excluded/
+previews/
+_aborted_output_*/
+*.bak_*
