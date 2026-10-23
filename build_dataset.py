@@ -367,7 +367,7 @@ class SyntheticDatasetBuilder:
                  category_filter=None, backgrounds_dir=None,
                  background_color=None, background_type=None,
                  perturbations=False, quality_distribution=(40, 40, 20),
-                 language='unknown', unique_texts=False):
+                 language='unknown', unique_texts=False, text_lines=False):
         # Store data_dir as string (may contain multiple directories comma-separated)
         self.data_dir = data_dir
         self.fonts_dir = Path(fonts_dir)
@@ -399,6 +399,7 @@ class SyntheticDatasetBuilder:
         self.background_type = background_type
         self.language = language
         self.unique_texts = unique_texts
+        self.text_lines = text_lines
         
         # Parse languages
         if ',' in language:
@@ -758,6 +759,14 @@ class SyntheticDatasetBuilder:
                 try:
                     with open(txt_file, 'r', encoding='utf-8') as f:
                         content = f.read()
+                    if self.text_lines:   # one sample per non-empty line: no sentence splitting, no 3-15 word filter, no language character filter (v3)
+                        for line in content.splitlines():
+                            line = re.sub(r'\s+', ' ', line).strip()
+                            if not line or not any(c.isalpha() for c in line):
+                                continue
+                            self.texts.append({'text': line, 'book': book_name, 'file': txt_file.name, 'language': lang})
+                            texts_loaded += 1
+                        continue
                     content = content.replace('\n', ' ')
                     content = re.sub(r'\s+', ' ', content)
                     sentences = re.split(r'(?<=[.!?;:])\s+', content)
@@ -1659,6 +1668,8 @@ def main():
                         help='Quality distribution: clean,degraded,severe in percentages (default: 40,40,20)')
     
     # Text variety
+    parser.add_argument('--text-lines', action='store_true',
+                        help='Each non-empty line of the text files is one sample (no sentence splitting, no 3-15 word filter)')
     parser.add_argument('--unique-texts', action='store_true',
                         help='Each text uses only one random font (maximizes text variety, recommended for HTR)')
     
@@ -1723,6 +1734,7 @@ def main():
         quality_distribution=quality_dist,
         language=args.language,
         unique_texts=args.unique_texts,
+        text_lines=args.text_lines,
         verbose=args.verbose
     )
 
