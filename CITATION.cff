@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you use this generator, please cite it using the concept DOI of its Zenodo record."
+type: software
+title: "Multilingual Synthetic HTR Dataset Generator: handwriting-style text lines for Latin-script languages with per-language font verification"
+version: 1.0.0
+license: MIT
+repository-code: "https://github.com/joaquimoliva/multilingual-synthetic-htr-dataset-generator"
+# After the transfer to the GCDA-UDL organization: repository-code: "https://github.com/GCDA-UDL/<NEW-NAME>"
+# doi: concept DOI, to be added after the first Zenodo release
+authors:
+  - family-names: Oliva
+    given-names: Joaquim
+    orcid: "https://orcid.org/0009-0006-2645-6008"
+    affiliation: "SEMBAC, Universitat de Lleida"
+  - family-names: Grao
+    given-names: Daniel
+    affiliation: "SEMBAC, Universitat de Lleida"
+keywords:
+  - handwritten text recognition
+  - synthetic data
+  - data generation
+  - low-resource languages
+  - fonts

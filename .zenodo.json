@@ -1,0 +1,13 @@
+{
+  "title": "Multilingual Synthetic HTR Dataset Generator: handwriting-style text lines for Latin-script languages with per-language font verification",
+  "upload_type": "software",
+  "version": "1.0.0",
+  "license": "MIT",
+  "creators": [
+    {"name": "Oliva, Joaquim", "affiliation": "SEMBAC, Universitat de Lleida", "orcid": "0009-0006-2645-6008"},
+    {"name": "Grao, Daniel", "affiliation": "SEMBAC, Universitat de Lleida"}
+  ],
+  "description": "<p>Generator of synthetic handwritten text recognition (HTR) data by rendering text with handwriting-style fonts. Four stages: text acquisition (Wikipedia in the target language, or an external corpus line by line with <code>--text-lines</code>), font acquisition and per-language glyph verification, image generation with controlled paper backgrounds and three perturbation levels, and splitting with per-sample metadata. Declarative per-language configuration (37 Latin-script languages). Version 1.0.0 is the version used in the article <em>Synthetic Handwriting for HTR Fine-Tuning: Controlled Evaluation Across Languages, Domains and Data Sizes</em>. Fonts are not distributed.</p><p>This work has been granted by the Ministerio de Ciencia, Innovación y Universidades (MICIU) AEI/10.13039/501100011033 under contract PID2023-146193OB-I00.</p>",
+  "keywords": ["handwritten text recognition", "synthetic data", "data generation", "low-resource languages", "fonts"],
+  "language": "eng"
+}
