@@ -1,7 +1,7 @@
 cff-version: 1.2.0
 message: "If you use this generator, please cite it using the concept DOI of its Zenodo record."
 type: software
-title: "Multilingual Synthetic HTR Dataset Generator: handwriting-style text lines for Latin-script languages with per-language font verification"
+title: "Synthetic HTR Generator: multilingual font-rendered handwriting lines for HTR training"
 version: 1.0.0
 license: MIT
 repository-code: "https://github.com/GCDA-UDL/software-synthetic-htr-generator"

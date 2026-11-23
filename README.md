@@ -1,6 +1,6 @@
-# Synthetic Handwriting Dataset Generator for HTR
+# Synthetic HTR Generator
 
-A Python framework for generating synthetic multilingual handwritten text datasets for Handwritten Text Recognition (HTR) training. The system automatically downloads texts from Wikipedia, scrapes handwriting fonts from DaFont, and generates realistic synthetic images with configurable perturbations.
+Multilingual font-rendered handwriting lines for HTR training. A Python framework for generating synthetic multilingual handwritten text datasets for Handwritten Text Recognition (HTR) training. The system automatically downloads texts from Wikipedia, scrapes handwriting fonts from DaFont, and generates realistic synthetic images with configurable perturbations.
 
 ## Features
 

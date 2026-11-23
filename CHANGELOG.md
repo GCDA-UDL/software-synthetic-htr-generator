@@ -11,7 +11,7 @@ Across Languages, Domains and Data Sizes*.
 - `--text-lines` mode in `build_dataset.py`: one sample per non-empty line of an external corpus, without sentence
   splitting or word-count filtering, for synthetic data with a domain-matched vocabulary (12f0918).
 - `--unique-texts` flag: each text is rendered with a single random font, which maximizes text diversity (bcb9707).
-- `CITATION.cff`, `.zenodo.json` and this changelog.
+- `CITATION.cff`, `.zenodo.json` and this changelog. Archived in Zenodo as *Synthetic HTR Generator*.
 
 ### Fixed
 - Automatic calculation of `max_articles` with `--unique-texts`, and the doubled `output_` prefix of output folders

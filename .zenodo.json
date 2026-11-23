@@ -1,5 +1,5 @@
 {
-  "title": "Multilingual Synthetic HTR Dataset Generator: handwriting-style text lines for Latin-script languages with per-language font verification",
+  "title": "Synthetic HTR Generator: multilingual font-rendered handwriting lines for HTR training",
   "upload_type": "software",
   "version": "1.0.0",
   "license": "MIT",
