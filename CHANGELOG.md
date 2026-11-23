@@ -2,7 +2,7 @@
 
 Versions follow the git tags of the repository.
 
-## [1.0.0] - unreleased
+## [1.0.0] - 2026-11-23
 
 Version used for the synthetic pools of the article *Synthetic Handwriting for HTR Fine-Tuning: Controlled Evaluation
 Across Languages, Domains and Data Sizes*.

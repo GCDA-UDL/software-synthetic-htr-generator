@@ -4,8 +4,7 @@ type: software
 title: "Multilingual Synthetic HTR Dataset Generator: handwriting-style text lines for Latin-script languages with per-language font verification"
 version: 1.0.0
 license: MIT
-repository-code: "https://github.com/joaquimoliva/multilingual-synthetic-htr-dataset-generator"
-# After the transfer to the GCDA-UDL organization: repository-code: "https://github.com/GCDA-UDL/<NEW-NAME>"
+repository-code: "https://github.com/GCDA-UDL/synthetic-htr-generator"
 # doi: concept DOI, to be added after the first Zenodo release
 authors:
   - family-names: Oliva

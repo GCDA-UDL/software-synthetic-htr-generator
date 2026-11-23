@@ -347,4 +347,4 @@ MIT License
 
 ## Acknowledgments
 
-This project is a fork of [Daniel Grao's TFG](https://github.com/original-repo) with significant enhancements for multilingual support, mode mixing, and quality assurance.
+This project started from Daniel Grao's final-year project (TFG, Universitat de Lleida) and adds significant enhancements for multilingual support, mode mixing, and quality assurance.
