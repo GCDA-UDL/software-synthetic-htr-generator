@@ -1,5 +1,7 @@
 # Synthetic HTR Generator
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24508743.svg)](https://doi.org/10.5281/zenodo.24508743)
+
 Multilingual font-rendered handwriting lines for HTR training. A Python framework for generating synthetic multilingual handwritten text datasets for Handwritten Text Recognition (HTR) training. The system automatically downloads texts from Wikipedia, scrapes handwriting fonts from DaFont, and generates realistic synthetic images with configurable perturbations.
 
 ## Features
@@ -340,6 +342,15 @@ python verify_dataset.py output_my_dataset
 ```
 
 ---
+
+## How to cite
+
+Cite the concept DOI of the Zenodo record (it resolves to the latest version):
+
+> Oliva, J., & Grao, D. (2026). *Synthetic HTR Generator: multilingual font-rendered handwriting lines for HTR training*
+> (Version 1.0.0) [Computer software]. Zenodo. https://doi.org/10.5281/zenodo.24508743
+
+`CITATION.cff` has the same information.
 
 ## License
 

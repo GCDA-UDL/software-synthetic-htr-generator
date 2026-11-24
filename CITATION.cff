@@ -5,7 +5,7 @@ title: "Synthetic HTR Generator: multilingual font-rendered handwriting lines fo
 version: 1.0.0
 license: MIT
 repository-code: "https://github.com/GCDA-UDL/software-synthetic-htr-generator"
-# doi: concept DOI, to be added after the first Zenodo release
+doi: 10.5281/zenodo.24508743
 authors:
   - family-names: Oliva
     given-names: Joaquim
